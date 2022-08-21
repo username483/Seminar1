@@ -1,10 +1,15 @@
 ﻿Console.Clear();
 Console.Write("Введите число ");
-int number=int.Parse(Console.ReadLine());
+int lastNum=int.Parse(Console.ReadLine());
 
-while (number>=10)
+//математическое решение
+while (lastNum>=10)
 {
-    number=number-10;
+    lastNum=lastNum-10;
 
 } 
-Console.Write($"{number}");
+Console.WriteLine($"{lastNum}");
+
+// решение с использованием функции lastNum
+
+Console.WriteLine($"Последнее число {lastNum % 10} " );
